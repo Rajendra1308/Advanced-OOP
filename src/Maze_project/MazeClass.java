@@ -1,6 +1,6 @@
 package Maze_project;
 
-public class MazeP {
+public class MazeClass {
     Maze dogMaze;
 
     /**

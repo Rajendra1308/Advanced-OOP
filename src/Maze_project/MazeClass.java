@@ -9,9 +9,7 @@ public class MazeClass {
      * @param maze is a maze that is used to construct the dogMaze
      */
     public void setup(String[][] maze) {
-        /*
-         * insert your code here to create the dogMaze using the input argument.
-         */
+
         dogMaze = new Maze(maze); // creating a maze
 
     }
@@ -22,7 +20,6 @@ public class MazeClass {
      * @return it returns true, if enough gate exists (at least 2), otherwise false.
      */
     public boolean enoughGate() {
-        // insert your code here. Change the return value to fit your purpose.
         if (findGateTop(dogMaze, 0, 0) + findGateLeft(dogMaze, 0, 0)
                 + findGateRight(dogMaze, 0, dogMaze.getMaze()[0].length - 1)
                 + findGateBottom(dogMaze, dogMaze.getMaze().length - 1, 0) >= 2) {
